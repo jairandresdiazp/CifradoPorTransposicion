@@ -6,7 +6,7 @@ using System.Text;
 namespace Cifrado
 {
     /// <summary>
-    /// Interfaz que crea metodos de cifrado
+    /// Interfaz que crea metodos de cifrado con metodos estandar
     /// </summary>
     interface InterfaceCifrado
     {

@@ -101,7 +101,7 @@
         </member>
         <member name="T:Cifrado.InterfaceCifrado">
             <summary>
-            Interfaz que crea metodos de cifrado
+            Interfaz que crea metodos de cifrado con metodos estandar
             </summary>
         </member>
         <member name="M:Cifrado.InterfaceCifrado.Cifrar(System.String)">
