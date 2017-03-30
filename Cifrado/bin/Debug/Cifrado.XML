@@ -99,6 +99,11 @@
             </summary>
             <param name="Input">nuevo input para cada metodo</param>
         </member>
+        <member name="T:Cifrado.InterfaceCifrado">
+            <summary>
+            Interfaz que crea metodos de cifrado
+            </summary>
+        </member>
         <member name="M:Cifrado.InterfaceCifrado.Cifrar(System.String)">
             <summary>
             Cifra un texto basado en una llave o metodo

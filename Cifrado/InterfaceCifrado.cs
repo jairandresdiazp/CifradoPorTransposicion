@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Cifrado
 {
+    /// <summary>
+    /// Interfaz que crea metodos de cifrado
+    /// </summary>
     interface InterfaceCifrado
     {
         /// <summary>
