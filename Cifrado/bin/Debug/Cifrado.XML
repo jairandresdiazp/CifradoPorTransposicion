@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cifrado</name>
+    </assembly>
+    <members>
+        <member name="T:Cifrado.Transposicion">
+            <summary>
+            clase qeu hereda la interfaz InterfaceCifrado que contiene el funcionmiento basico de un metodo de cifrado
+            </summary>
+        </member>
+        <member name="F:Cifrado.Transposicion.key">
+            <summary>
+            corresponde ala llave de cifrado
+            </summary>
+        </member>
+        <member name="F:Cifrado.Transposicion.length">
+            <summary>
+            corresponde a la longitud de input a crifrar o descifrar
+            </summary>
+        </member>
+        <member name="F:Cifrado.Transposicion.input">
+            <summary>
+            corresponde al input que se cifra o descifra
+            </summary>
+        </member>
+        <member name="F:Cifrado.Transposicion.dimenciones">
+            <summary>
+            corresponde a las dimenciones de la matriz a transponer
+            </summary>
+        </member>
+        <member name="F:Cifrado.Transposicion.matriz">
+            <summary>
+            corresponde a la matriz que almacena los datos
+            </summary>
+        </member>
+        <member name="P:Cifrado.Transposicion.Length">
+            <summary>
+            propiedad que permite modificar o recuperar la longitud del input a cifrar o descifrar 
+            </summary>
+        </member>
+        <member name="P:Cifrado.Transposicion.Input">
+            <summary>
+            propiedad que permite modificar o recuperar el input a cifrar o descifrar 
+            </summary>
+        </member>
+        <member name="P:Cifrado.Transposicion.Key">
+            <summary>
+            propiedad que permite modificar o recuperar la clave para cifrar o descifrar 
+            </summary>
+        </member>
+        <member name="P:Cifrado.Transposicion.Matriz">
+            <summary>
+            propiedad que permite modificar o recuperar la matriz a trasponer 
+            </summary>
+        </member>
+        <member name="M:Cifrado.Transposicion.Dimenciones(System.String)">
+            <summary>
+            permite calcular las dimenciones de una matriz cuadrada para un input
+            </summary>
+            <param name="Input">cadena de texto plano</param>
+            <returns>la dimencion de la matriz cuadrada que puede almacenar el input</returns>
+        </member>
+        <member name="M:Cifrado.Transposicion.Cifrar(System.String)">
+            <summary>
+            Cifra un texto basado en una llave o metodo
+            </summary>
+            <param name="Input">parametro de entrada texto sin cifrar</param>
+            <returns>texto cifrado</returns>
+        </member>
+        <member name="M:Cifrado.Transposicion.Cifrar">
+            <summary>
+            Cifra un texto basado en una llave o metodo
+            </summary>
+            <returns>texto cifrado</returns>
+        </member>
+        <member name="M:Cifrado.Transposicion.Descifrar(System.String)">
+            <summary>
+            Descifra un texto basado en una llave o metodo
+            </summary>
+            <param name="Input">parametro de entrada texto cifrado</param>
+            <returns>texto descifrado</returns>
+        </member>
+        <member name="M:Cifrado.Transposicion.Descifrar">
+            <summary>
+            Descifra un texto basado en una llave o metodo
+            </summary>
+            <returns>texto descifrado</returns>
+        </member>
+        <member name="M:Cifrado.Transposicion.Getkey(System.String)">
+            <summary>
+            Actualiza la llave de cifrado
+            </summary>
+            <param name="Key">nueva llave de cifrado</param>
+        </member>
+        <member name="M:Cifrado.Transposicion.GetInput(System.String)">
+            <summary>
+            Actualiza el input de cada metodo
+            </summary>
+            <param name="Input">nuevo input para cada metodo</param>
+        </member>
+        <member name="M:Cifrado.InterfaceCifrado.Cifrar(System.String)">
+            <summary>
+            Cifra un texto basado en una llave o metodo
+            </summary>
+            <param name="Input">parametro de entrada texto sin cifrar</param>
+            <returns>texto cifrado</returns>
+        </member>
+        <member name="M:Cifrado.InterfaceCifrado.Descifrar(System.String)">
+            <summary>
+            Descifra un texto basado en una llave o metodo
+            </summary>
+            <param name="Input">parametro de entrada texto cifrado</param>
+            <returns>texto descifrado</returns>
+        </member>
+        <member name="M:Cifrado.InterfaceCifrado.Cifrar">
+            <summary>
+            Cifra un texto basado en una llave o metodo
+            </summary>
+            <returns>texto cifrado</returns>
+        </member>
+        <member name="M:Cifrado.InterfaceCifrado.Descifrar">
+            <summary>
+            Descifra un texto basado en una llave o metodo
+            </summary>
+            <returns>texto descifrado</returns>
+        </member>
+        <member name="M:Cifrado.InterfaceCifrado.Getkey(System.String)">
+            <summary>
+            Actualiza la llave de cifrado
+            </summary>
+            <param name="Key">nueva llave de cifrado</param>
+        </member>
+        <member name="M:Cifrado.InterfaceCifrado.GetInput(System.String)">
+            <summary>
+            Actualiza el input de cada metodo
+            </summary>
+            <param name="Input">nuevo input para cada metodo</param>
+        </member>
+    </members>
+</doc>

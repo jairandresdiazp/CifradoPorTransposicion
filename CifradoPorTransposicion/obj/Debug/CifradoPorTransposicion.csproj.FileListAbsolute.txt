@@ -1,0 +1,12 @@
+C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\CifradoPorTransposicion\bin\Debug\CifradoPorTransposicion.exe
+C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\CifradoPorTransposicion\bin\Debug\CifradoPorTransposicion.pdb
+C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\CifradoPorTransposicion\obj\Debug\CifradoPorTransposicion.csprojResolveAssemblyReference.cache
+C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\CifradoPorTransposicion\obj\Debug\CifradoPorTransposicion.Properties.Resources.resources
+C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\CifradoPorTransposicion\obj\Debug\CifradoPorTransposicion.csproj.GenerateResource.Cache
+C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\CifradoPorTransposicion\obj\Debug\CifradoPorTransposicion.exe
+C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\CifradoPorTransposicion\obj\Debug\CifradoPorTransposicion.pdb
+C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\CifradoPorTransposicion\bin\Debug\Cifrado.dll
+C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\CifradoPorTransposicion\bin\Debug\Cifrado.pdb
+C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\CifradoPorTransposicion\obj\Debug\CifradoPorTransposicion.CifradoTransposicion.resources
+C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\CifradoPorTransposicion\bin\Debug\CifradoPorTransposicion.XML
+C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\CifradoPorTransposicion\bin\Debug\Cifrado.xml

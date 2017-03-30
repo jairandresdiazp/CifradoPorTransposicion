@@ -1,0 +1,231 @@
+\hypertarget{class_cifrado_1_1_transposicion}{}\section{Referencia de la Clase Cifrado.\+Transposicion}
+\label{class_cifrado_1_1_transposicion}\index{Cifrado.\+Transposicion@{Cifrado.\+Transposicion}}
+
+
+clase qeu hereda la interfaz \hyperlink{interface_cifrado_1_1_interface_cifrado}{Interface\+Cifrado} que contiene el funcionmiento basico de un metodo de cifrado  
+
+
+Diagrama de herencias de Cifrado.\+Transposicion\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cifrado_1_1_transposicion}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_cifrado_1_1_transposicion_a8df16c3d60a6f57d8cf40b17a5f40925}{Dimenciones} (string \hyperlink{class_cifrado_1_1_transposicion_ae35952dd0b3f5c626fa4f7c084428f8a}{Input})
+\begin{DoxyCompactList}\small\item\em permite calcular las dimenciones de una matriz cuadrada para un input \end{DoxyCompactList}\item 
+string \hyperlink{class_cifrado_1_1_transposicion_a34feeb193fcf5f9bf3385043dae4b4c8}{Cifrar} (string \hyperlink{class_cifrado_1_1_transposicion_ae35952dd0b3f5c626fa4f7c084428f8a}{Input})
+\begin{DoxyCompactList}\small\item\em Cifra un texto basado en una llave o metodo \end{DoxyCompactList}\item 
+string \hyperlink{class_cifrado_1_1_transposicion_a3d6021ac06c306a6943e88c3678d97cf}{Cifrar} ()
+\begin{DoxyCompactList}\small\item\em Cifra un texto basado en una llave o metodo \end{DoxyCompactList}\item 
+string \hyperlink{class_cifrado_1_1_transposicion_a45a8f6d97d2afdf5691c7197ae0187c4}{Descifrar} (string \hyperlink{class_cifrado_1_1_transposicion_ae35952dd0b3f5c626fa4f7c084428f8a}{Input})
+\begin{DoxyCompactList}\small\item\em Descifra un texto basado en una llave o metodo \end{DoxyCompactList}\item 
+string \hyperlink{class_cifrado_1_1_transposicion_ac2934aaba73bbaca8e5da6b788cf10b2}{Descifrar} ()
+\begin{DoxyCompactList}\small\item\em Descifra un texto basado en una llave o metodo \end{DoxyCompactList}\item 
+void \hyperlink{class_cifrado_1_1_transposicion_ab35db490c8543ccb453b4384ad4e236c}{Getkey} (string \hyperlink{class_cifrado_1_1_transposicion_ada94313eb5cb29e6c95ade7bd2f8306f}{Key})
+\begin{DoxyCompactList}\small\item\em Actualiza la llave de cifrado \end{DoxyCompactList}\item 
+void \hyperlink{class_cifrado_1_1_transposicion_a41f7391ffcd850e2aebf9852248d6d8d}{Get\+Input} (string \hyperlink{class_cifrado_1_1_transposicion_ae35952dd0b3f5c626fa4f7c084428f8a}{Input})
+\begin{DoxyCompactList}\small\item\em Actualiza el input de cada metodo \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propiedades}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_cifrado_1_1_transposicion_a732e580b22860879283fd70933821194}{Length}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em propiedad que permite modificar o recuperar la longitud del input a cifrar o descifrar \end{DoxyCompactList}\item 
+string \hyperlink{class_cifrado_1_1_transposicion_ae35952dd0b3f5c626fa4f7c084428f8a}{Input}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em propiedad que permite modificar o recuperar el input a cifrar o descifrar \end{DoxyCompactList}\item 
+string \hyperlink{class_cifrado_1_1_transposicion_ada94313eb5cb29e6c95ade7bd2f8306f}{Key}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em propiedad que permite modificar o recuperar la clave para cifrar o descifrar \end{DoxyCompactList}\item 
+Data\+Table \hyperlink{class_cifrado_1_1_transposicion_a0befab6514e913da972697a59f27b14a}{Matriz}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em propiedad que permite modificar o recuperar la matriz a trasponer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+clase qeu hereda la interfaz \hyperlink{interface_cifrado_1_1_interface_cifrado}{Interface\+Cifrado} que contiene el funcionmiento basico de un metodo de cifrado 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_cifrado_1_1_transposicion_a34feeb193fcf5f9bf3385043dae4b4c8}\label{class_cifrado_1_1_transposicion_a34feeb193fcf5f9bf3385043dae4b4c8}} 
+\index{Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}!Cifrar@{Cifrar}}
+\index{Cifrar@{Cifrar}!Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}}
+\subsubsection{\texorpdfstring{Cifrar()}{Cifrar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string Cifrado.\+Transposicion.\+Cifrar (\begin{DoxyParamCaption}\item[{string}]{Input }\end{DoxyParamCaption})}
+
+
+
+Cifra un texto basado en una llave o metodo 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Input} & parametro de entrada texto sin cifrar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+texto cifrado
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{interface_cifrado_1_1_interface_cifrado_a67baf37475e65a3cf07a0546309cf391}{Cifrado.\+Interface\+Cifrado}.
+
+\mbox{\Hypertarget{class_cifrado_1_1_transposicion_a3d6021ac06c306a6943e88c3678d97cf}\label{class_cifrado_1_1_transposicion_a3d6021ac06c306a6943e88c3678d97cf}} 
+\index{Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}!Cifrar@{Cifrar}}
+\index{Cifrar@{Cifrar}!Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}}
+\subsubsection{\texorpdfstring{Cifrar()}{Cifrar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string Cifrado.\+Transposicion.\+Cifrar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cifra un texto basado en una llave o metodo 
+
+\begin{DoxyReturn}{Devuelve}
+texto cifrado
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{interface_cifrado_1_1_interface_cifrado_ade6b2a14d9cd48feec78c2695a2149bc}{Cifrado.\+Interface\+Cifrado}.
+
+\mbox{\Hypertarget{class_cifrado_1_1_transposicion_a45a8f6d97d2afdf5691c7197ae0187c4}\label{class_cifrado_1_1_transposicion_a45a8f6d97d2afdf5691c7197ae0187c4}} 
+\index{Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}!Descifrar@{Descifrar}}
+\index{Descifrar@{Descifrar}!Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}}
+\subsubsection{\texorpdfstring{Descifrar()}{Descifrar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string Cifrado.\+Transposicion.\+Descifrar (\begin{DoxyParamCaption}\item[{string}]{Input }\end{DoxyParamCaption})}
+
+
+
+Descifra un texto basado en una llave o metodo 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Input} & parametro de entrada texto cifrado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+texto descifrado
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{interface_cifrado_1_1_interface_cifrado_af7035203a5d4212ddcca039351dd3a22}{Cifrado.\+Interface\+Cifrado}.
+
+\mbox{\Hypertarget{class_cifrado_1_1_transposicion_ac2934aaba73bbaca8e5da6b788cf10b2}\label{class_cifrado_1_1_transposicion_ac2934aaba73bbaca8e5da6b788cf10b2}} 
+\index{Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}!Descifrar@{Descifrar}}
+\index{Descifrar@{Descifrar}!Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}}
+\subsubsection{\texorpdfstring{Descifrar()}{Descifrar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string Cifrado.\+Transposicion.\+Descifrar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Descifra un texto basado en una llave o metodo 
+
+\begin{DoxyReturn}{Devuelve}
+texto descifrado
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{interface_cifrado_1_1_interface_cifrado_aef07884028ee90698a4a1202d851fecf}{Cifrado.\+Interface\+Cifrado}.
+
+\mbox{\Hypertarget{class_cifrado_1_1_transposicion_a8df16c3d60a6f57d8cf40b17a5f40925}\label{class_cifrado_1_1_transposicion_a8df16c3d60a6f57d8cf40b17a5f40925}} 
+\index{Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}!Dimenciones@{Dimenciones}}
+\index{Dimenciones@{Dimenciones}!Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}}
+\subsubsection{\texorpdfstring{Dimenciones()}{Dimenciones()}}
+{\footnotesize\ttfamily int Cifrado.\+Transposicion.\+Dimenciones (\begin{DoxyParamCaption}\item[{string}]{Input }\end{DoxyParamCaption})}
+
+
+
+permite calcular las dimenciones de una matriz cuadrada para un input 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Input} & cadena de texto plano\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+la dimencion de la matriz cuadrada que puede almacenar el input
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cifrado_1_1_transposicion_a41f7391ffcd850e2aebf9852248d6d8d}\label{class_cifrado_1_1_transposicion_a41f7391ffcd850e2aebf9852248d6d8d}} 
+\index{Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}!Get\+Input@{Get\+Input}}
+\index{Get\+Input@{Get\+Input}!Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}}
+\subsubsection{\texorpdfstring{Get\+Input()}{GetInput()}}
+{\footnotesize\ttfamily void Cifrado.\+Transposicion.\+Get\+Input (\begin{DoxyParamCaption}\item[{string}]{Input }\end{DoxyParamCaption})}
+
+
+
+Actualiza el input de cada metodo 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Input} & nuevo input para cada metodo\\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{interface_cifrado_1_1_interface_cifrado_ab573118c8f88269038b21e452a9fa8d3}{Cifrado.\+Interface\+Cifrado}.
+
+\mbox{\Hypertarget{class_cifrado_1_1_transposicion_ab35db490c8543ccb453b4384ad4e236c}\label{class_cifrado_1_1_transposicion_ab35db490c8543ccb453b4384ad4e236c}} 
+\index{Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}!Getkey@{Getkey}}
+\index{Getkey@{Getkey}!Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}}
+\subsubsection{\texorpdfstring{Getkey()}{Getkey()}}
+{\footnotesize\ttfamily void Cifrado.\+Transposicion.\+Getkey (\begin{DoxyParamCaption}\item[{string}]{Key }\end{DoxyParamCaption})}
+
+
+
+Actualiza la llave de cifrado 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Key} & nueva llave de cifrado\\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{interface_cifrado_1_1_interface_cifrado_a0eee6d795ffd5d8f9971e1d8fb6f4b8d}{Cifrado.\+Interface\+Cifrado}.
+
+
+
+\subsection{Documentación de propiedades}
+\mbox{\Hypertarget{class_cifrado_1_1_transposicion_ae35952dd0b3f5c626fa4f7c084428f8a}\label{class_cifrado_1_1_transposicion_ae35952dd0b3f5c626fa4f7c084428f8a}} 
+\index{Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}!Input@{Input}}
+\index{Input@{Input}!Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}}
+\subsubsection{\texorpdfstring{Input}{Input}}
+{\footnotesize\ttfamily string Cifrado.\+Transposicion.\+Input\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+propiedad que permite modificar o recuperar el input a cifrar o descifrar 
+
+\mbox{\Hypertarget{class_cifrado_1_1_transposicion_ada94313eb5cb29e6c95ade7bd2f8306f}\label{class_cifrado_1_1_transposicion_ada94313eb5cb29e6c95ade7bd2f8306f}} 
+\index{Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}!Key@{Key}}
+\index{Key@{Key}!Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}}
+\subsubsection{\texorpdfstring{Key}{Key}}
+{\footnotesize\ttfamily string Cifrado.\+Transposicion.\+Key\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+propiedad que permite modificar o recuperar la clave para cifrar o descifrar 
+
+\mbox{\Hypertarget{class_cifrado_1_1_transposicion_a732e580b22860879283fd70933821194}\label{class_cifrado_1_1_transposicion_a732e580b22860879283fd70933821194}} 
+\index{Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}!Length@{Length}}
+\index{Length@{Length}!Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}}
+\subsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily int Cifrado.\+Transposicion.\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+propiedad que permite modificar o recuperar la longitud del input a cifrar o descifrar 
+
+\mbox{\Hypertarget{class_cifrado_1_1_transposicion_a0befab6514e913da972697a59f27b14a}\label{class_cifrado_1_1_transposicion_a0befab6514e913da972697a59f27b14a}} 
+\index{Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}!Matriz@{Matriz}}
+\index{Matriz@{Matriz}!Cifrado\+::\+Transposicion@{Cifrado\+::\+Transposicion}}
+\subsubsection{\texorpdfstring{Matriz}{Matriz}}
+{\footnotesize\ttfamily Data\+Table Cifrado.\+Transposicion.\+Matriz\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+propiedad que permite modificar o recuperar la matriz a trasponer 
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaira/\+Documents/\+Visual Studio 2015/\+Projects/\+Cifrado\+Por\+Transposicion/\+Cifrado/Transposicion.\+cs\end{DoxyCompactItemize}

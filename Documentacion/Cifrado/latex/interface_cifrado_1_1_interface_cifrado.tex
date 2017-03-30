@@ -1,0 +1,147 @@
+\hypertarget{interface_cifrado_1_1_interface_cifrado}{}\section{Referencia de la Interfaz Cifrado.\+Interface\+Cifrado}
+\label{interface_cifrado_1_1_interface_cifrado}\index{Cifrado.\+Interface\+Cifrado@{Cifrado.\+Interface\+Cifrado}}
+Diagrama de herencias de Cifrado.\+Interface\+Cifrado\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_cifrado_1_1_interface_cifrado}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{interface_cifrado_1_1_interface_cifrado_a67baf37475e65a3cf07a0546309cf391}{Cifrar} (string Input)
+\begin{DoxyCompactList}\small\item\em Cifra un texto basado en una llave o metodo \end{DoxyCompactList}\item 
+string \hyperlink{interface_cifrado_1_1_interface_cifrado_af7035203a5d4212ddcca039351dd3a22}{Descifrar} (string Input)
+\begin{DoxyCompactList}\small\item\em Descifra un texto basado en una llave o metodo \end{DoxyCompactList}\item 
+string \hyperlink{interface_cifrado_1_1_interface_cifrado_ade6b2a14d9cd48feec78c2695a2149bc}{Cifrar} ()
+\begin{DoxyCompactList}\small\item\em Cifra un texto basado en una llave o metodo \end{DoxyCompactList}\item 
+string \hyperlink{interface_cifrado_1_1_interface_cifrado_aef07884028ee90698a4a1202d851fecf}{Descifrar} ()
+\begin{DoxyCompactList}\small\item\em Descifra un texto basado en una llave o metodo \end{DoxyCompactList}\item 
+void \hyperlink{interface_cifrado_1_1_interface_cifrado_a0eee6d795ffd5d8f9971e1d8fb6f4b8d}{Getkey} (string Key)
+\begin{DoxyCompactList}\small\item\em Actualiza la llave de cifrado \end{DoxyCompactList}\item 
+void \hyperlink{interface_cifrado_1_1_interface_cifrado_ab573118c8f88269038b21e452a9fa8d3}{Get\+Input} (string Input)
+\begin{DoxyCompactList}\small\item\em Actualiza el input de cada metodo \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{interface_cifrado_1_1_interface_cifrado_a67baf37475e65a3cf07a0546309cf391}\label{interface_cifrado_1_1_interface_cifrado_a67baf37475e65a3cf07a0546309cf391}} 
+\index{Cifrado\+::\+Interface\+Cifrado@{Cifrado\+::\+Interface\+Cifrado}!Cifrar@{Cifrar}}
+\index{Cifrar@{Cifrar}!Cifrado\+::\+Interface\+Cifrado@{Cifrado\+::\+Interface\+Cifrado}}
+\subsubsection{\texorpdfstring{Cifrar()}{Cifrar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string Cifrado.\+Interface\+Cifrado.\+Cifrar (\begin{DoxyParamCaption}\item[{string}]{Input }\end{DoxyParamCaption})}
+
+
+
+Cifra un texto basado en una llave o metodo 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Input} & parametro de entrada texto sin cifrar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+texto cifrado
+\end{DoxyReturn}
+
+
+Implementado en \hyperlink{class_cifrado_1_1_transposicion_a34feeb193fcf5f9bf3385043dae4b4c8}{Cifrado.\+Transposicion}.
+
+\mbox{\Hypertarget{interface_cifrado_1_1_interface_cifrado_ade6b2a14d9cd48feec78c2695a2149bc}\label{interface_cifrado_1_1_interface_cifrado_ade6b2a14d9cd48feec78c2695a2149bc}} 
+\index{Cifrado\+::\+Interface\+Cifrado@{Cifrado\+::\+Interface\+Cifrado}!Cifrar@{Cifrar}}
+\index{Cifrar@{Cifrar}!Cifrado\+::\+Interface\+Cifrado@{Cifrado\+::\+Interface\+Cifrado}}
+\subsubsection{\texorpdfstring{Cifrar()}{Cifrar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string Cifrado.\+Interface\+Cifrado.\+Cifrar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cifra un texto basado en una llave o metodo 
+
+\begin{DoxyReturn}{Devuelve}
+texto cifrado
+\end{DoxyReturn}
+
+
+Implementado en \hyperlink{class_cifrado_1_1_transposicion_a3d6021ac06c306a6943e88c3678d97cf}{Cifrado.\+Transposicion}.
+
+\mbox{\Hypertarget{interface_cifrado_1_1_interface_cifrado_af7035203a5d4212ddcca039351dd3a22}\label{interface_cifrado_1_1_interface_cifrado_af7035203a5d4212ddcca039351dd3a22}} 
+\index{Cifrado\+::\+Interface\+Cifrado@{Cifrado\+::\+Interface\+Cifrado}!Descifrar@{Descifrar}}
+\index{Descifrar@{Descifrar}!Cifrado\+::\+Interface\+Cifrado@{Cifrado\+::\+Interface\+Cifrado}}
+\subsubsection{\texorpdfstring{Descifrar()}{Descifrar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string Cifrado.\+Interface\+Cifrado.\+Descifrar (\begin{DoxyParamCaption}\item[{string}]{Input }\end{DoxyParamCaption})}
+
+
+
+Descifra un texto basado en una llave o metodo 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Input} & parametro de entrada texto cifrado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+texto descifrado
+\end{DoxyReturn}
+
+
+Implementado en \hyperlink{class_cifrado_1_1_transposicion_a45a8f6d97d2afdf5691c7197ae0187c4}{Cifrado.\+Transposicion}.
+
+\mbox{\Hypertarget{interface_cifrado_1_1_interface_cifrado_aef07884028ee90698a4a1202d851fecf}\label{interface_cifrado_1_1_interface_cifrado_aef07884028ee90698a4a1202d851fecf}} 
+\index{Cifrado\+::\+Interface\+Cifrado@{Cifrado\+::\+Interface\+Cifrado}!Descifrar@{Descifrar}}
+\index{Descifrar@{Descifrar}!Cifrado\+::\+Interface\+Cifrado@{Cifrado\+::\+Interface\+Cifrado}}
+\subsubsection{\texorpdfstring{Descifrar()}{Descifrar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string Cifrado.\+Interface\+Cifrado.\+Descifrar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Descifra un texto basado en una llave o metodo 
+
+\begin{DoxyReturn}{Devuelve}
+texto descifrado
+\end{DoxyReturn}
+
+
+Implementado en \hyperlink{class_cifrado_1_1_transposicion_ac2934aaba73bbaca8e5da6b788cf10b2}{Cifrado.\+Transposicion}.
+
+\mbox{\Hypertarget{interface_cifrado_1_1_interface_cifrado_ab573118c8f88269038b21e452a9fa8d3}\label{interface_cifrado_1_1_interface_cifrado_ab573118c8f88269038b21e452a9fa8d3}} 
+\index{Cifrado\+::\+Interface\+Cifrado@{Cifrado\+::\+Interface\+Cifrado}!Get\+Input@{Get\+Input}}
+\index{Get\+Input@{Get\+Input}!Cifrado\+::\+Interface\+Cifrado@{Cifrado\+::\+Interface\+Cifrado}}
+\subsubsection{\texorpdfstring{Get\+Input()}{GetInput()}}
+{\footnotesize\ttfamily void Cifrado.\+Interface\+Cifrado.\+Get\+Input (\begin{DoxyParamCaption}\item[{string}]{Input }\end{DoxyParamCaption})}
+
+
+
+Actualiza el input de cada metodo 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Input} & nuevo input para cada metodo\\
+\hline
+\end{DoxyParams}
+
+
+Implementado en \hyperlink{class_cifrado_1_1_transposicion_a41f7391ffcd850e2aebf9852248d6d8d}{Cifrado.\+Transposicion}.
+
+\mbox{\Hypertarget{interface_cifrado_1_1_interface_cifrado_a0eee6d795ffd5d8f9971e1d8fb6f4b8d}\label{interface_cifrado_1_1_interface_cifrado_a0eee6d795ffd5d8f9971e1d8fb6f4b8d}} 
+\index{Cifrado\+::\+Interface\+Cifrado@{Cifrado\+::\+Interface\+Cifrado}!Getkey@{Getkey}}
+\index{Getkey@{Getkey}!Cifrado\+::\+Interface\+Cifrado@{Cifrado\+::\+Interface\+Cifrado}}
+\subsubsection{\texorpdfstring{Getkey()}{Getkey()}}
+{\footnotesize\ttfamily void Cifrado.\+Interface\+Cifrado.\+Getkey (\begin{DoxyParamCaption}\item[{string}]{Key }\end{DoxyParamCaption})}
+
+
+
+Actualiza la llave de cifrado 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Key} & nueva llave de cifrado\\
+\hline
+\end{DoxyParams}
+
+
+Implementado en \hyperlink{class_cifrado_1_1_transposicion_ab35db490c8543ccb453b4384ad4e236c}{Cifrado.\+Transposicion}.
+
+
+
+La documentación para este interfaz fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/jaira/\+Documents/\+Visual Studio 2015/\+Projects/\+Cifrado\+Por\+Transposicion/\+Cifrado/Interface\+Cifrado.\+cs\end{DoxyCompactItemize}
