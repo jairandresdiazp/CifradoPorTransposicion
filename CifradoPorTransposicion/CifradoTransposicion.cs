@@ -89,6 +89,8 @@ namespace CifradoPorTransposicion
                     }
                     //se refrescan los datos de la grilla que muestra los datos
                     dgv_Matriz.Refresh();
+                    //se deshabilita el boton calcular
+                    btn_calcular.Enabled = false;
                 }
             }
             catch (Exception)
