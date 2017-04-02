@@ -99,73 +99,80 @@ namespace Cifrado
         /// <returns>la dimencion de la matriz cuadrada que puede almacenar el input</returns>
         public int Dimenciones(string Input)
         {
-            //se remueven los espacios al inicio y final de la cadena
-            Input = Input.Trim();
-            //se remueven todos los espacios de la cadena
-            Input = Input.Replace(" ", "");
-            //se alacenna la longitud de la cadena sin espacios
-            int Length = Input.Length;
-            //se repite el ciclo tantas veces como la longitud de la cadena para poder crear matrices dinamicas
-            for (int i = 0; i < Length; i++)
+            try
             {
+                //se remueven los espacios al inicio y final de la cadena
+                Input = Input.Trim();
+                //se remueven todos los espacios de la cadena
+                Input = Input.Replace(" ", "");
+                //se alacenna la longitud de la cadena sin espacios
+                int Length = Input.Length;
                 //se repite el ciclo tantas veces como la longitud de la cadena para poder crear matrices dinamicas
-                for (int j = 0; j < Length; j++)
+                for (int i = 0; i < Length; i++)
                 {
-                    //se verifica si filas por columnas corresponde a la longitud de la matriz 
-                    if (j * j == Length)
+                    //se repite el ciclo tantas veces como la longitud de la cadena para poder crear matrices dinamicas
+                    for (int j = 0; j < Length; j++)
                     {
-                        //se actualizan las dimenciones para la matriz cuadrada
-                        dimenciones = j;
-                        //se actualiza el incice a la longitu para forzar el fin del ciclo
-                        j = Length;
+                        //se verifica si filas por columnas corresponde a la longitud de la matriz 
+                        if (j * j == Length)
+                        {
+                            //se actualizan las dimenciones para la matriz cuadrada
+                            dimenciones = j;
+                            //se actualiza el incice a la longitu para forzar el fin del ciclo
+                            j = Length;
+                        }
+                    }
+                    //si las dimenciones son 0 se debe agragar un carcater de relleno =
+                    if (dimenciones <= 0)
+                    {
+                        //se actualiza el input con el caracter de relleno
+                        Input = Input + "=";
+                        //se actualiza la longitud de la cadena 
+                        Length = Input.Length;
+                    }
+                    //se forza el cierre del ciclo por que ya se tiene una dimencion valida
+                    else
+                    {
+                        i = Length;
                     }
                 }
-                //si las dimenciones son 0 se debe agragar un carcater de relleno =
-                if (dimenciones <= 0)
+                //si las dimenciones validas se crea la matriz
+                if (dimenciones > 0)
                 {
-                    //se actualiza el input con el caracter de relleno
-                    Input = Input + "=";
-                    //se actualiza la longitud de la cadena 
-                    Length = Input.Length;
+                    //se agregan las filas y columnas respectivamente
+                    for (int i = 0; i < dimenciones; i++)
+                    {
+                        Matriz.Rows.Add();
+                        Matriz.Columns.Add("" + i);
+                    }
+                    //se inicializa un indice para la matriz y la cadena
+                    int index = 0;
+                    //se recorren las filas
+                    for (int f = 0; f < dimenciones; f++)
+                    {
+                        //se recorren las columnas
+                        for (int c = 0; c < dimenciones; c++)
+                        {
+                            //se recupera el valor de la cadena en la pocicion del indice
+                            string value = Input.Substring(index, 1);
+                            //se almacena la variable en la pocicion icnidcada 
+                            Matriz.Rows[f][c] = value;
+                            //se incrementa el indice
+                            index++;
+                        }
+                    }
                 }
-                //se forza el cierre del ciclo por que ya se tiene una dimencion valida
-                else
-                {
-                    i = Length;
-                }
+                //se actualiza la longitud del input
+                this.Length = Length;
+                //se actualiza el input
+                this.Input = Input;
+                //se retornan las dimenciones de la matriz
+                return dimenciones;
             }
-            //si las dimenciones validas se crea la matriz
-            if (dimenciones > 0)
+            catch (Exception)
             {
-                //se agregan las filas y columnas respectivamente
-                for (int i = 0; i < dimenciones; i++)
-                {
-                    Matriz.Rows.Add();
-                    Matriz.Columns.Add("" + i);
-                }
-                //se inicializa un indice para la matriz y la cadena
-                int index = 0;
-                //se recorren las filas
-                for (int f = 0; f < dimenciones; f++)
-                {
-                    //se recorren las columnas
-                    for (int c = 0; c < dimenciones; c++)
-                    {
-                        //se recupera el valor de la cadena en la pocicion del indice
-                        string value = Input.Substring(index, 1);
-                        //se almacena la variable en la pocicion icnidcada 
-                        Matriz.Rows[f][c] = value;
-                        //se incrementa el indice
-                        index++;
-                    }
-                }
             }
-            //se actualiza la longitud del input
-            this.Length = Length;
-            //se actualiza el input
-            this.Input = Input;
-            //se retornan las dimenciones de la matriz
-            return dimenciones;
+            return 0;           
         }
 
         /// <summary>
@@ -184,24 +191,31 @@ namespace Cifrado
         /// <returns>texto cifrado</returns>
         public string Cifrar()
         {
-            //objeto que almacena la cadena cifrada
-            string OutPut = null;
-            //se pone en una matriz toda la cadena 
-            char[] Char = Key.ToString().ToCharArray();
-            //se recorren las filas
-            for (int c = 0; c < dimenciones; c++)
+            try
             {
-                //se almacena la columna que se va leer
-                int column = int.Parse(Char[c].ToString());
-                //se recorren las co0lumnas
-                for (int f = 0; f < dimenciones; f++)
+                //objeto que almacena la cadena cifrada
+                string OutPut = null;
+                //se pone en una matriz toda la cadena 
+                char[] Char = Key.ToString().ToCharArray();
+                //se recorren las filas
+                for (int c = 0; c < dimenciones; c++)
                 {
-                    //se alamcena el caracter de la matriz correspondiente con la posicion
-                    OutPut = OutPut+Matriz.Rows[f][column].ToString();
+                    //se almacena la columna que se va leer
+                    int column = int.Parse(Char[c].ToString());
+                    //se recorren las co0lumnas
+                    for (int f = 0; f < dimenciones; f++)
+                    {
+                        //se alamcena el caracter de la matriz correspondiente con la posicion
+                        OutPut = OutPut + Matriz.Rows[f][column].ToString();
+                    }
                 }
+                //se retorna la cadena cifrada
+                return OutPut;
             }
-            //se retorna la cadena cifrada
-            return OutPut;
+            catch (Exception)
+            {
+            }
+            return null;
         }
 
         /// <summary>

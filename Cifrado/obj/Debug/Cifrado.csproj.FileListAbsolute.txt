@@ -3,3 +3,4 @@ C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\Cif
 C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\Cifrado\obj\Debug\Cifrado.dll
 C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\Cifrado\obj\Debug\Cifrado.pdb
 C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\Cifrado\bin\Debug\Cifrado.XML
+C:\Users\jaira\Documents\Visual Studio 2015\Projects\CifradoPorTransposicion\Cifrado\obj\Debug\Cifrado.csprojResolveAssemblyReference.cache

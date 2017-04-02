@@ -41,13 +41,19 @@ namespace CifradoPorTransposicion
         /// <param name="e">argumentos del objeto</param>
         private void btn_cifrar_Click(object sender, EventArgs e)
         {
-            //valida que se aya ingresado una clave y que su longitud sea igual a las dimanciones de la matriz
-            if (txt_key.Text!="" && txt_key.Text.Length == Dimenciones)
+            try
             {
-                //se actualiza la llave de cifrado del objeto Transposicion
-                Transposicion.Key = txt_key.Text;
-                //se llama el metodo cifrar del objeto Transposicion y se almacena el resultado para mostrar al usuario
-                txt_OutPut.Text = Transposicion.Cifrar();
+                //valida que se aya ingresado una clave y que su longitud sea igual a las dimanciones de la matriz
+                if (txt_key.Text != "" && txt_key.Text.Length == Dimenciones)
+                {
+                    //se actualiza la llave de cifrado del objeto Transposicion
+                    Transposicion.Key = txt_key.Text;
+                    //se llama el metodo cifrar del objeto Transposicion y se almacena el resultado para mostrar al usuario
+                    txt_OutPut.Text = Transposicion.Cifrar();
+                }
+            }
+            catch (Exception)
+            {
             }
         }
         /// <summary>
@@ -57,31 +63,37 @@ namespace CifradoPorTransposicion
         /// <param name="e">argumentos del objeto</param>
         private void btn_calcular_Click(object sender, EventArgs e)
         {
-            //se valida que el texto a cifrar sea diferente a vacio
-            if (txt_Input.Text != "")
+            try
             {
-                //se almacena el valor a cifrar en la variable Input
-                Input = txt_Input.Text;
-                //se almacenan las dimenciones de la matriz haciendo el llamado del metodo Dimenciones del objeto Transposicion enviando la variable Input
-                Dimenciones = Transposicion.Dimenciones(Input);
-                //se muestra al usuario el label con las dimenciones de la matriz
-                lbl_Dimenciones.Text = "Matriz de " + Dimenciones + " X " + Dimenciones;
-                //al calcular las dimenciones de la matriz se modifica el Input ya que se remueven todos los espacios por lo cual se actualiza el valor de la variable input llamando la propiedad Input del objeto Transposicion 
-                Input = Transposicion.Input;
-                //se habilita el txt de la clave 
-                txt_key.Enabled = true;
-                //se actualiza la maxima cantidad de carcateres del txt de la clave para evitar errores de compilazion al agregar mas caracteres que la dimencion de la matriz
-                txt_key.MaxLength = Dimenciones;
-                //se muestra la matriz generada al usuario
-                dgv_Matriz.DataSource = Transposicion.Matriz;
-                for (int i = 0; i < Dimenciones; i++)
+                //se valida que el texto a cifrar sea diferente a vacio
+                if (txt_Input.Text != "")
                 {
-                    //se actualiza el rotulo de las filas
-                    dgv_Matriz.Rows[i].HeaderCell.Value = (i).ToString();
+                    //se almacena el valor a cifrar en la variable Input
+                    Input = txt_Input.Text;
+                    //se almacenan las dimenciones de la matriz haciendo el llamado del metodo Dimenciones del objeto Transposicion enviando la variable Input
+                    Dimenciones = Transposicion.Dimenciones(Input);
+                    //se muestra al usuario el label con las dimenciones de la matriz
+                    lbl_Dimenciones.Text = "Matriz de " + Dimenciones + " X " + Dimenciones;
+                    //al calcular las dimenciones de la matriz se modifica el Input ya que se remueven todos los espacios por lo cual se actualiza el valor de la variable input llamando la propiedad Input del objeto Transposicion 
+                    Input = Transposicion.Input;
+                    //se habilita el txt de la clave 
+                    txt_key.Enabled = true;
+                    //se actualiza la maxima cantidad de carcateres del txt de la clave para evitar errores de compilazion al agregar mas caracteres que la dimencion de la matriz
+                    txt_key.MaxLength = Dimenciones;
+                    //se muestra la matriz generada al usuario
+                    dgv_Matriz.DataSource = Transposicion.Matriz;
+                    for (int i = 0; i < Dimenciones; i++)
+                    {
+                        //se actualiza el rotulo de las filas
+                        dgv_Matriz.Rows[i].HeaderCell.Value = (i).ToString();
+                    }
+                    //se refrescan los datos de la grilla que muestra los datos
+                    dgv_Matriz.Refresh();
                 }
-                //se refrescan los datos de la grilla que muestra los datos
-                dgv_Matriz.Refresh();
-            }   
+            }
+            catch (Exception)
+            {
+            }
         }
         /// <summary>
         /// evento KeyPress del txt de la clave
